@@ -1,0 +1,203 @@
+div.main-container {
+  min-height: 180vh;
+  background-image: url(../../Images//Vector2.png);
+  background-position: 0 -350px;
+  margin-top: -250px;
+  z-index: -2;
+  border-bottom: 2px solid salmon;
+  /* background-size: cover; */
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  font-family: "Bree Serif", serif;
+}
+
+.text {
+  width: 99%;
+  margin: auto;
+  height: 500px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "left left left";
+  justify-items: start;
+}
+
+.text h1 {
+  font-size: 28px;
+}
+.text p {
+  font-size: 18px;
+}
+
+.text-left {
+  grid-area: left;
+  align-self: center;
+  justify-self: stretch;
+  padding-left: 200px;
+  display: flex;
+  height: 350px;
+  flex-direction: column;
+  justify-content: space-evenly;
+  /* background-color: rebeccapurple; */
+  position: relative;
+}
+
+.text-left::after {
+  content: "";
+  width: 100%;
+  height: 200px;
+  /* background-color: red; */
+  position: absolute;
+  top: 280px;
+  background-image: url(../../Images/stairs.svg);
+  background-repeat: no-repeat;
+  background-position: 100px 0;
+}
+
+.text-left h1 {
+  width: 200px;
+}
+.text-left p {
+  width: 200px;
+}
+
+.image {
+  margin-top: -340px;
+  display: grid;
+  grid-template-areas: "stairs  grup2";
+}
+
+.stairs {
+  grid-area: stairs;
+  justify-self: end;
+  position: relative;
+}
+
+.stairs img {
+  position: absolute;
+  top: 150px;
+  left: 70px;
+}
+
+.grup2 {
+  grid-area: grup2;
+  position: relative;
+  justify-self: end;
+}
+
+.grup2 img {
+  width: 900px;
+  align-self: start;
+}
+
+.content-footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "kiri kanan";
+}
+
+.item-left {
+  grid-area: kiri;
+  width: 300px;
+  justify-self: end;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.item-right {
+  grid-area: kanan;
+  width: 50%;
+}
+
+.item-right img {
+  width: 100%;
+}
+
+/* responsive breakpoint */
+
+@media screen and (max-width: 992px) {
+  .container-content {
+    grid-template-columns: 100px 1fr 1fr;
+    grid-template-areas: "gambar1 gambar2 gambar3";
+    justify-items: end;
+  }
+  .group {
+    width: 300px;
+  }
+  .lugage {
+    width: 250px;
+  }
+}
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+  .content-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "kiri kanan";
+    justify-items: start;
+    margin-bottom: 40px;
+  }
+
+  .grup2 {
+    display: none;
+  }
+
+  .text-left {
+    grid-area: left;
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-self: start;
+    margin-top: -600px;
+    padding-left: 100px;
+  }
+
+  .stairs img {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+}
+
+/* mobile */
+
+@media screen and (max-width: 576px) {
+  .content-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "kiri kiri";
+    justify-items: center;
+    margin-bottom: 40px;
+  }
+
+  .item-right {
+    display: none;
+  }
+
+  .grup2 {
+    display: none;
+  }
+
+  .text-left {
+    grid-area: left;
+    display: flex;
+    height: 350px;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-self: start;
+    margin-top: -300px;
+    padding-left: 100px;
+  }
+
+  .stairs img {
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+  }
+}

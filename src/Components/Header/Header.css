@@ -1,0 +1,173 @@
+div.container-header {
+  background-color: #ffdfcf;
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr;
+  grid-template-areas: "lamp content gambar";
+  background-image: url(../../Images/Vector.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-bottom: 2px solid salmon;
+  justify-items: end;
+  height: 70vh;
+  position: relative;
+  font-family: "Bree Serif", serif;
+  /* letter-spacing: 1px; */
+}
+
+.lamp-img {
+  grid-area: lamp;
+  position: absolute;
+  top: 100px;
+  left: 60px;
+  /* width: 200px; */
+}
+
+div.content-header {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 250px;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+div.content-header h2 {
+  font-size: 50px;
+}
+
+div.content-header p {
+  font-size: 21px;
+}
+
+div.moon {
+  grid-area: gambar;
+  justify-self: start;
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  position: relative;
+}
+
+div.moon img {
+  width: 360px;
+}
+
+div.moon::after {
+  content: "";
+  background-image: url(../../Images/planes.png);
+  position: absolute;
+  z-index: 10;
+  bottom: 0;
+  left: 200px;
+  width: 500px;
+  height: 350px;
+  background-size: 25em;
+  background-repeat: no-repeat;
+}
+
+div.button {
+  background-color: #333333;
+  position: absolute;
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  border-radius: 4px;
+  padding: 10px 20px;
+  bottom: -20px;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+/* responsive breakpoint */
+
+/* l */
+
+@media screen and (max-width: 992px) {
+  div.content-header h2 {
+    font-size: 40px;
+  }
+
+  div.content-header p {
+    font-size: 18px;
+  }
+
+  div.container-header {
+    grid-template-columns: 50px 1fr 1fr;
+    grid-template-areas: "lamp content gambar";
+    justify-items: end;
+  }
+
+  div.content-header {
+    width: 250px;
+  }
+
+  .lamp-img {
+    grid-area: lamp;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 190px;
+  }
+}
+
+/* tablet */
+
+@media screen and (max-width: 768px) {
+  .lamp-img {
+    display: none;
+  }
+
+  .moon {
+    overflow: hidden;
+  }
+
+  div.content-header h2 {
+    font-size: 40px;
+  }
+
+  div.content-header p {
+    font-size: 18px;
+  }
+
+  div.container-header {
+    grid-template-columns: 0px 1fr 1fr;
+    grid-template-areas: "lamp content gambar";
+    justify-items: end;
+  }
+
+  div.content-header {
+    grid-area: content;
+    width: 250px;
+  }
+}
+
+/* mobile */
+
+@media screen and (max-width: 576px) {
+  div.moon {
+    display: none;
+  }
+
+  .lamp-img {
+    display: none;
+  }
+
+  div.content-header h2 {
+    font-size: 40px;
+  }
+
+  div.content-header p {
+    font-size: 18px;
+  }
+
+  div.container-header {
+    grid-template-areas: "content content content";
+    justify-items: center;
+  }
+
+  div.content-header {
+    grid-area: content;
+    width: 50%;
+  }
+}
