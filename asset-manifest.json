@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/greenhouse/static/css/main.04b7a6fe.chunk.css",
+    "main.js": "/greenhouse/static/js/main.31ad3a2e.chunk.js",
+    "main.js.map": "/greenhouse/static/js/main.31ad3a2e.chunk.js.map",
+    "runtime-main.js": "/greenhouse/static/js/runtime-main.63f2cc87.js",
+    "runtime-main.js.map": "/greenhouse/static/js/runtime-main.63f2cc87.js.map",
+    "static/js/2.ac862a4a.chunk.js": "/greenhouse/static/js/2.ac862a4a.chunk.js",
+    "static/js/2.ac862a4a.chunk.js.map": "/greenhouse/static/js/2.ac862a4a.chunk.js.map",
+    "index.html": "/greenhouse/index.html",
+    "precache-manifest.5b5d3e4a59adcc09239d0a9dc1c892f5.js": "/greenhouse/precache-manifest.5b5d3e4a59adcc09239d0a9dc1c892f5.js",
+    "service-worker.js": "/greenhouse/service-worker.js",
+    "static/css/main.04b7a6fe.chunk.css.map": "/greenhouse/static/css/main.04b7a6fe.chunk.css.map",
+    "static/js/2.ac862a4a.chunk.js.LICENSE.txt": "/greenhouse/static/js/2.ac862a4a.chunk.js.LICENSE.txt",
+    "static/media/Group 2.png": "/greenhouse/static/media/Group 2.5bc34b8f.png",
+    "static/media/Group.png": "/greenhouse/static/media/Group.edd5ad16.png",
+    "static/media/Header.css": "/greenhouse/static/media/Vector.2a17e761.svg",
+    "static/media/Main.css": "/greenhouse/static/media/stairs.643fd4a8.svg",
+    "static/media/climbing.png": "/greenhouse/static/media/climbing.3b9469e0.png",
+    "static/media/furniture.png": "/greenhouse/static/media/furniture.6f6ca391.png",
+    "static/media/lamp.png": "/greenhouse/static/media/lamp.2ce1f040.png",
+    "static/media/luggage.png": "/greenhouse/static/media/luggage.a812a9eb.png",
+    "static/media/sun.png": "/greenhouse/static/media/sun.d78e483f.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.63f2cc87.js",
+    "static/js/2.ac862a4a.chunk.js",
+    "static/css/main.04b7a6fe.chunk.css",
+    "static/js/main.31ad3a2e.chunk.js"
+  ]
+}
